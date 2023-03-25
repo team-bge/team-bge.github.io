@@ -59,4 +59,4 @@ You can also just build the project once without launching a test server:
 npm run build
 ```
 
-This will generate a single `/dist/index.js` file containing your whole compiled game.
+This will generate the JavaScript for your game in `/dist`.
