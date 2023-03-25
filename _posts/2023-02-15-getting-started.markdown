@@ -51,7 +51,7 @@ Assuming you're using VS Code, pressing F5 should start debugging your game. A b
 ![](https://files.facepunch.com/ziks/1b1511b1/firefox_Nn09p9JcKh.png)
 
 It'll recompile your game whenever you change a `.ts` file, then replay whatever actions you performed in-game but with the new changes applied.
-This replay playback can diverge if you changed which past decisions players are prompted with.
+This replay playback can diverge if you change which decisions players are prompted with.
 
 You can also just build the project once without launching a test server:
 
