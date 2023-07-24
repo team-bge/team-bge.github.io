@@ -39,7 +39,7 @@ Your game code will be structured something like this:
 ```bash
 package.json        # Defines dependencies, and how to build the game
 tsconfig.json       # More configuration for building the game
-src/index.ts        # Module entry point
+src/index.ts        # Entry point for your game
 src/game.ts         # Main game class
 src/player.ts       # Player class
 src/table.ts        # Table object layout
