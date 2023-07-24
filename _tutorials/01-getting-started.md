@@ -3,6 +3,7 @@ layout: post
 title:  "Getting Started"
 date:   2023-02-15 18:30:00 +0100
 categories: tutorial
+permalink: /tutorials/01-getting-started.html
 ---
 ## Requirements
 You will need:
@@ -38,7 +39,7 @@ Your game code will be structured something like this:
 ```bash
 package.json        # Defines dependencies, and how to build the game
 tsconfig.json       # More configuration for building the game
-src/index.ts        # Entry point for your game
+src/index.ts        # Module entry point
 src/game.ts         # Main game class
 src/player.ts       # Player class
 src/table.ts        # Table object layout

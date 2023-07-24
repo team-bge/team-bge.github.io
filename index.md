@@ -4,3 +4,9 @@
 
 layout: home
 ---
+# Tutorials
+<ul>
+{% for tutorial in site.tutorials %}
+    <li><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></li>
+{% endfor %}
+</ul>
