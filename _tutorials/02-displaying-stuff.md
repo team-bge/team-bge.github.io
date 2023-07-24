@@ -7,7 +7,7 @@ permalink: /tutorials/02-displaying-stuff.html
 ---
 ## Requirements
 You will need:
-* Follow the [Getting Started](getting-started.html) tutorial
+* Follow the [Getting Started](/tutorials/01-getting-started.html) tutorial
 
 ## Background
 The visuals of games are built from a bunch of 3D objects in a tree hierarchy. The root of that tree is an instance of your main `Game` class, which represents the table. Objects can contain other child objects, these children will be drawn when the parent object is drawn.
