@@ -4,14 +4,14 @@
 
 layout: home
 ---
-# Tutorials
+<h2>Tutorials</h2>
 <ul>
 {% for tutorial in site.tutorials %}
     <li><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></li>
 {% endfor %}
 </ul>
 
-# API Reference
+<h2>API Reference</h2>
 <ul>
 <li><a href="https://team-bge.github.io/bge-core/">bge-core</a></li>
 </ul>
