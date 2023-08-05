@@ -10,3 +10,8 @@ layout: home
     <li><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></li>
 {% endfor %}
 </ul>
+
+# API Reference
+<ul>
+<li><a href="https://team-bge.github.io/bge-core/">bge-core</a></li>
+</ul>
