@@ -18,13 +18,21 @@
 <section class="tsd-panel tsd-comment">
 <div class="tsd-comment tsd-typography"><p>Helper with methods to generate random numbers.</p>
 </div>
-<div class="tsd-comment tsd-typography"></div></section>
+<div class="tsd-comment tsd-typography">
+<h4>Example</h4><p>Use the global shared instance:</p>
+<pre><code class="language-ts"><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">value</span><span class="hl-1"> = </span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-4">random</span><span class="hl-1">.</span><span class="hl-0">int</span><span class="hl-1">(</span><span class="hl-5">10</span><span class="hl-1">, </span><span class="hl-5">20</span><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+
+<h4>Example</h4><p>Create an instance with a seed string:</p>
+<pre><code class="language-ts"><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">myRandom</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-0">Random</span><span class="hl-1">(</span><span class="hl-2">&quot;my cool seed&quot;</span><span class="hl-1">);</span><br/><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">value</span><span class="hl-1"> = </span><span class="hl-4">myRandom</span><span class="hl-1">.</span><span class="hl-0">int</span><span class="hl-1">(</span><span class="hl-5">10</span><span class="hl-1">, </span><span class="hl-5">20</span><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+</div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
 <li><span class="target">Random</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L7">src/random.ts:7</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L16">src/random.ts:16</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -36,8 +44,7 @@
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Accessors</h3>
-<div class="tsd-index-list"><a href="Random.html#isInitialized" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-262144"><rect fill="var(--color-icon-background)" stroke="#FF4D4D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M8.85 16L11.13 7.24H12.582L14.85 16H13.758L13.182 13.672H10.53L9.954 16H8.85ZM10.746 12.76H12.954L12.282 10.06C12.154 9.548 12.054 9.12 11.982 8.776C11.91 8.432 11.866 8.208 11.85 8.104C11.834 8.208 11.79 8.432 11.718 8.776C11.646 9.12 11.546 9.544 11.418 10.048L10.746 12.76Z" fill="var(--color-text)"></path></g></svg><span>is<wbr/>Initialized</span></a>
-<a href="Random.html#seed" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>seed</span></a>
+<div class="tsd-index-list"><a href="Random.html#seed" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-262144"><rect fill="var(--color-icon-background)" stroke="#FF4D4D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M8.85 16L11.13 7.24H12.582L14.85 16H13.758L13.182 13.672H10.53L9.954 16H8.85ZM10.746 12.76H12.954L12.282 10.06C12.154 9.548 12.054 9.12 11.982 8.776C11.91 8.432 11.866 8.208 11.85 8.104C11.834 8.208 11.79 8.432 11.718 8.776C11.646 9.12 11.546 9.544 11.418 10.048L10.746 12.76Z" fill="var(--color-text)"></path></g></svg><span>seed</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
@@ -52,34 +59,45 @@
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_Random"><span class="tsd-kind-constructor-signature">new <wbr/>Random</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">seed</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Random.html" class="tsd-signature-type tsd-kind-class">Random</a><a href="#constructor.new_Random" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_Random"><span class="tsd-kind-constructor-signature">new <wbr/>Random</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">seed</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Random.html" class="tsd-signature-type tsd-kind-class">Random</a><a href="#constructor.new_Random" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Create an instance of <a href="Random.html" class="tsd-kind-class">Random</a> with a given seed. Instances created
+with the same seed will output the same sequence of values, as long as each
+method is called in the same order each time.</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">seed</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="Random.html" class="tsd-signature-type tsd-kind-class">Random</a></h4><aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">seed</span>: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>String to be hashed and used as an initial state.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="Random.html" class="tsd-signature-type tsd-kind-class">Random</a></h4>
+<div class="tsd-comment tsd-typography">
+<h4>Example</h4><p>Create an instance with a seed string:</p>
+<pre><code class="language-ts"><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">myRandom</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-0">Random</span><span class="hl-1">(</span><span class="hl-2">&quot;my cool seed&quot;</span><span class="hl-1">);</span><br/><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">value</span><span class="hl-1"> = </span><span class="hl-4">myRandom</span><span class="hl-1">.</span><span class="hl-0">int</span><span class="hl-1">(</span><span class="hl-5">10</span><span class="hl-1">, </span><span class="hl-5">20</span><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+</div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L52">src/random.ts:52</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L84">src/random.ts:84</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
-<section class="tsd-panel tsd-member"><a id="isInitialized" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>is<wbr/>Initialized</span><a href="#isInitialized" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature" id="isInitialized.isInitialized-1"><span class="tsd-signature-symbol">get</span> isInitialized<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-<li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L48">src/random.ts:48</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="seed" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>seed</span><a href="#seed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature" id="seed.seed-1"><span class="tsd-signature-symbol">get</span> seed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography"><p>Seed string used when creating this instance.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+<div class="tsd-comment tsd-typography">
+<h4>Example</h4><p>Print the seed of the shared instance:</p>
+<pre><code class="language-ts"><span class="hl-4">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">(</span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-4">random</span><span class="hl-1">.</span><span class="hl-4">seed</span><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+</div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L44">src/random.ts:44</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L60">src/random.ts:60</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member"><a id="chance" class="tsd-anchor"></a>
@@ -98,9 +116,17 @@
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography">
+<h4>Example</h4><p>Coin flip:</p>
+<pre><code class="language-ts"><span class="hl-4">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">(</span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-4">random</span><span class="hl-1">.</span><span class="hl-0">chance</span><span class="hl-1">() ? </span><span class="hl-2">&quot;Heads&quot;</span><span class="hl-1"> : </span><span class="hl-2">&quot;Tails&quot;</span><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+
+<h4>Example</h4><p>Weighted coin flip, with a 75% bias towards heads:</p>
+<pre><code class="language-ts"><span class="hl-4">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">(</span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-4">random</span><span class="hl-1">.</span><span class="hl-0">chance</span><span class="hl-1">(</span><span class="hl-5">0.75</span><span class="hl-1">) ? </span><span class="hl-2">&quot;Heads&quot;</span><span class="hl-1"> : </span><span class="hl-2">&quot;Tails&quot;</span><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+</div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L158">src/random.ts:158</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L220">src/random.ts:220</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="float" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>float</span><a href="#float" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -109,9 +135,13 @@
 <div class="tsd-comment tsd-typography"><p>Generates a uniformly-distributed floating-point number between 0 (inclusive) and 1 (exclusive).</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography">
+<h4>Example</h4><p>Generate a floating-point value between 0 and 1:</p>
+<pre><code class="language-ts"><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">value</span><span class="hl-1"> = </span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-4">random</span><span class="hl-1">.</span><span class="hl-0">float</span><span class="hl-1">();</span>
+</code><button>Copy</button></pre>
+</div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L77">src/random.ts:77</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L115">src/random.ts:115</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="float.float-2"><span class="tsd-kind-call-signature">float</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">max</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#float.float-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Generates a uniformly-distributed floating-point number between 0 (inclusive) and max (exclusive).</p>
@@ -125,9 +155,13 @@
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography">
+<h4>Example</h4><p>Generate a floating-point value between 0 and 10:</p>
+<pre><code class="language-ts"><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">value</span><span class="hl-1"> = </span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-4">random</span><span class="hl-1">.</span><span class="hl-0">float</span><span class="hl-1">(</span><span class="hl-5">10</span><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+</div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L83">src/random.ts:83</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L125">src/random.ts:125</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="float.float-3"><span class="tsd-kind-call-signature">float</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">min</span>, <span class="tsd-kind-parameter">max</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#float.float-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Generates a uniformly-distributed floating-point number between min (inclusive) and max (exclusive).</p>
@@ -146,9 +180,13 @@
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography">
+<h4>Example</h4><p>Generate a floating-point value between 10 and 20:</p>
+<pre><code class="language-ts"><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">value</span><span class="hl-1"> = </span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-4">random</span><span class="hl-1">.</span><span class="hl-0">float</span><span class="hl-1">(</span><span class="hl-5">10</span><span class="hl-1">, </span><span class="hl-5">20</span><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+</div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L90">src/random.ts:90</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L136">src/random.ts:136</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="int" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>int</span><a href="#int" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -165,9 +203,13 @@
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography">
+<h4>Example</h4><p>Generate an integer value between 0 and 9 (inclusive):</p>
+<pre><code class="language-ts"><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">value</span><span class="hl-1"> = </span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-4">random</span><span class="hl-1">.</span><span class="hl-0">int</span><span class="hl-1">(</span><span class="hl-5">10</span><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+</div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L123">src/random.ts:123</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L173">src/random.ts:173</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="int.int-2"><span class="tsd-kind-call-signature">int</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">min</span>, <span class="tsd-kind-parameter">max</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#int.int-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Generates a uniformly-distributed integer between min (inclusive) and max (exclusive).</p>
@@ -186,9 +228,13 @@
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography">
+<h4>Example</h4><p>Generate an integer value between 10 and 19 (inclusive):</p>
+<pre><code class="language-ts"><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">value</span><span class="hl-1"> = </span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-4">random</span><span class="hl-1">.</span><span class="hl-0">int</span><span class="hl-1">(</span><span class="hl-5">10</span><span class="hl-1">, </span><span class="hl-5">20</span><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+</div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L130">src/random.ts:130</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L184">src/random.ts:184</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="item" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>item</span><a href="#item" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -209,11 +255,15 @@
 <div class="tsd-comment tsd-typography"><p>Array of items to select from.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">TItem</span></h4><p>An item chosed from the given array.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">TItem</span></h4><p>An item chosen from the given array.</p>
 
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography">
+<h4>Example</h4><p>Pick a random name from a list:</p>
+<pre><code class="language-ts"><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">list</span><span class="hl-1"> = [</span><span class="hl-2">&quot;Alice&quot;</span><span class="hl-1">, </span><span class="hl-2">&quot;Bob&quot;</span><span class="hl-1">, </span><span class="hl-2">&quot;Charlie&quot;</span><span class="hl-1">];</span><br/><span class="hl-3">let</span><span class="hl-1"> </span><span class="hl-4">name</span><span class="hl-1"> = </span><span class="hl-4">bge</span><span class="hl-1">.</span><span class="hl-4">random</span><span class="hl-1">.</span><span class="hl-0">item</span><span class="hl-1">(</span><span class="hl-4">list</span><span class="hl-1">);</span>
+</code><button>Copy</button></pre>
+</div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L175">src/random.ts:175</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L242">src/random.ts:242</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="shuffle" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>shuffle</span><a href="#shuffle" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -241,7 +291,7 @@
 </code><button>Copy</button></pre>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L192">src/random.ts:192</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L259">src/random.ts:259</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="shuffle.shuffle-2"><span class="tsd-kind-call-signature">shuffle</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">TItem</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">array</span>, <span class="tsd-kind-parameter">from</span>, <span class="tsd-kind-parameter">to</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#shuffle.shuffle-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Shuffles a range of items of the given array in-place.</p>
@@ -276,7 +326,7 @@
 </code><button>Copy</button></pre>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L205">src/random.ts:205</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/team-bge/bge-core/blob/0751980/src/random.ts#L272">src/random.ts:272</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -296,7 +346,6 @@
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
-<li><a href="#isInitialized" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>is<wbr/>Initialized</span></a></li>
 <li><a href="#seed" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>seed</span></a></li>
 <li><a href="#chance" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>chance</span></a></li>
 <li><a href="#float" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>float</span></a></li>
